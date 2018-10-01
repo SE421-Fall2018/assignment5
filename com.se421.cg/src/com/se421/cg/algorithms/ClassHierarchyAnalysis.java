@@ -10,7 +10,7 @@ import com.ensoftcorp.atlas.core.query.Q;
 import com.ensoftcorp.atlas.core.script.Common;
 import com.ensoftcorp.atlas.core.xcsg.XCSG;
 
-public class ClassHiearchyAnalysis {
+public class ClassHierarchyAnalysis {
 
 	public static final String CHA_CALL_EDGE = "CHA_CALL_EDGE";
 	

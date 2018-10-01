@@ -12,7 +12,7 @@ import com.ensoftcorp.atlas.ui.scripts.selections.IResizableScript;
 import com.ensoftcorp.atlas.ui.scripts.util.SimpleScriptUtil;
 import com.ensoftcorp.atlas.ui.selection.event.FrontierEdgeExploreEvent;
 import com.ensoftcorp.atlas.ui.selection.event.IAtlasSelectionEvent;
-import com.se421.cg.algorithms.ClassHiearchyAnalysis;
+import com.se421.cg.algorithms.ClassHierarchyAnalysis;
 
 public class CHACallGraphSmartView extends FilteringAtlasSmartViewScript implements IResizableScript, IExplorableScript {
 
@@ -41,7 +41,7 @@ public class CHACallGraphSmartView extends FilteringAtlasSmartViewScript impleme
 		Q filteredSelection = filter(event.getSelection());
 
 		// get the call graph
-		Q cg = Common.universe().edges(ClassHiearchyAnalysis.CHA_CALL_EDGE);
+		Q cg = Common.universe().edges(ClassHierarchyAnalysis.CHA_CALL_EDGE);
 		
 		// compute what to show for current steps
 		Q f = filteredSelection.forwardStepOn(cg, forward);

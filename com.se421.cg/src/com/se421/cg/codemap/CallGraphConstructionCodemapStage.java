@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 import org.eclipse.core.runtime.IProgressMonitor;
 
 import com.ensoftcorp.atlas.core.indexing.providers.ToolboxIndexingStage;
-import com.se421.cg.algorithms.ClassHiearchyAnalysis;
+import com.se421.cg.algorithms.ClassHierarchyAnalysis;
 import com.se421.cg.algorithms.ReachabilityAnalysis;
 import com.se421.cg.log.Log;
 
@@ -47,7 +47,7 @@ public class CallGraphConstructionCodemapStage implements ToolboxIndexingStage {
 		try {
 			Log.info("Starting CHA call graph construction");
 			long start = System.nanoTime();
-			ClassHiearchyAnalysis.run();
+			ClassHierarchyAnalysis.run();
 			long stop = System.nanoTime();
 			DecimalFormat decimalFormat = new DecimalFormat("#.##");
 			double time = (stop - start)/1000.0/1000.0; // ms
