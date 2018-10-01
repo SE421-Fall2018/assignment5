@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Call Grpah Construction Regression Tests
+Bundle-SymbolicName: com.se421.cg.regression;singleton:=true
+Bundle-Version: 3.3.6.qualifier
+Bundle-Vendor: SE421
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.core.filesystem,
+ org.eclipse.ui.ide,
+ com.ensoftcorp.atlas.core;bundle-version="3.3.6",
+ com.ensoftcorp.atlas.ui;bundle-version="3.3.6",
+ com.ensoftcorp.atlas.ui.shell;bundle-version="3.3.6",
+ org.junit,
+ com.se421.pointsto;bundle-version="3.3.6"
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: com.se421.cg.regression.Activator
+Automatic-Module-Name: com.se421.paths.regression
