@@ -13,8 +13,7 @@ Require-Bundle: org.eclipse.ui,
  com.ensoftcorp.atlas.core;bundle-version="3.3.6",
  com.ensoftcorp.atlas.ui;bundle-version="3.3.6",
  com.ensoftcorp.atlas.ui.shell;bundle-version="3.3.6",
- org.junit,
- com.se421.pointsto;bundle-version="3.3.6"
+ org.junit
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: com.se421.cg.regression.Activator
 Automatic-Module-Name: com.se421.paths.regression
