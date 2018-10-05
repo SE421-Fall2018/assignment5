@@ -26,12 +26,13 @@ public class CallGraphConstructionCodemapStage implements ToolboxIndexingStage {
 			DecimalFormat decimalFormat = new DecimalFormat("#.##");
 			double time = (stop - start)/1000.0/1000.0; // ms
 			if(time < 100) {
-				Log.info("Finished  RA call graph construction in " + decimalFormat.format(time) + "ms");
+				Log.info("Finished RA call graph construction in " + decimalFormat.format(time) + "ms");
 			} else {
 				time = (stop - start)/1000.0/1000.0/1000.0; // s
 				if(time < 60) {
 					Log.info("Finished RA call graph construction in " + decimalFormat.format(time) + "s");
 				} else {
+					time = (stop - start)/1000.0/1000.0/1000.0/60.0; // m
 					if(time < 60) {
 						Log.info("Finished RA call graph construction in " + decimalFormat.format(time) + "m");
 					} else {
@@ -52,12 +53,13 @@ public class CallGraphConstructionCodemapStage implements ToolboxIndexingStage {
 			DecimalFormat decimalFormat = new DecimalFormat("#.##");
 			double time = (stop - start)/1000.0/1000.0; // ms
 			if(time < 100) {
-				Log.info("Finished  CHA call graph construction in " + decimalFormat.format(time) + "ms");
+				Log.info("Finished CHA call graph construction in " + decimalFormat.format(time) + "ms");
 			} else {
 				time = (stop - start)/1000.0/1000.0/1000.0; // s
 				if(time < 60) {
 					Log.info("Finished CHA call graph construction in " + decimalFormat.format(time) + "s");
 				} else {
+					time = (stop - start)/1000.0/1000.0/1000.0/60.0; // m
 					if(time < 60) {
 						Log.info("Finished CHA call graph construction in " + decimalFormat.format(time) + "m");
 					} else {
